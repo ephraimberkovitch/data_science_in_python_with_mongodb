@@ -55,6 +55,22 @@ def main():
     for t in release_titles:
         print t
 
+def main_exer():
+    results = query_by_name(ARTIST_URL, query_type["simple"], "First Aid Kit")
+    print len(results)
+
+    results = query_by_name(ARTIST_URL, query_type["simple"], "Queen")
+    print results
+
+    results = query_by_name(ARTIST_URL, query_type["simple"], "Beatles")
+    print results
+
+    results = query_by_name(ARTIST_URL, query_type["simple"], "Nirvana")
+    print results
+
+    results = query_by_name(ARTIST_URL, query_type["simple"], "One Direction")
+    print results
 
 if __name__ == '__main__':
-    main()
+    #main()
+    main_exer()
